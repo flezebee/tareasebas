@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
     char ID[10];
     char nombre[20];
     int stock=0;
-    float precio=0, ganacias=0;
+    float precio=0, ganacias=0, preciofinal=0;
     int pan=0;
     int len=0;
     int aux;
@@ -30,6 +30,7 @@ int main(int argc, char const *argv[])
                 scanf("%d",&stock);
                 printf("Ingresar el precio del producto: ");
                 scanf("%f",&precio);
+                preciofinal = precio;
                 break;
             case 2:
                 printf("Ingresar la cantidad de productos a vender: ");
@@ -72,7 +73,7 @@ int main(int argc, char const *argv[])
                 printf("ID: %s\n",ID);
                 printf("Nombre: %s\n",nombre);
                 printf("Stock: %d\n",stock);
-                printf("Precio: %f\n",precio);
+                printf("Precio: %f\n",preciofinal);
                 break;
             case 5:
                 printf("Ganancias totales: %f\n",ganacias);
